@@ -1,0 +1,81 @@
+.f-first-form
+  display block
+  max-width 940px
+  margin 0 auto
+  & .f-default
+    &__wrap
+      display flex
+      justify-content space-between
+      margin-bottom 30px
+    &__field
+      width 32%
+      height 50px
+      background #F4F5F9
+      border 1px solid rgba(0, 0, 0, 0.1)
+      border-radius 5px
+      padding-left 20px
+      transition border .3s
+      &:focus
+        border: 2px solid rgba(235, 52, 65, 0.5);
+    &-checkbox
+      display flex
+      justify-content center
+      align-items center
+      cursor pointer
+      margin-bottom 30px
+      &__field
+        position relative
+        width 24px
+        height 24px
+        background #F4F5F9
+        border 1px solid rgba(0, 0, 0, 0.1)
+        border-radius: 5px
+        cursor pointer
+        &::before
+          content ''
+          position absolute
+          top 5px
+          left 5px
+          display block
+          width 14px
+          height 12px
+          background-image: url(../img/check.svg)
+          opacity 0
+          transition opacity .3s
+      &__field:checked
+        &::before
+          opacity 1
+      &__text
+        margin-left 18px
+        font-size 14px
+        color #525252
+        & span
+          position relative
+          &::before
+            width 98%
+            left 2px
+    &__button
+      display block
+      max-width 300px
+      width 100%
+      height 50px
+      background rgba(235, 52, 65, 0.5)
+      border-radius 5px
+      margin 0 auto
+      font-size 12px
+      text-transform uppercase
+      color #ffffff
+@media screen and (max-width: 1260px)
+  .f-first-form
+    & .f-default
+      &__row
+        max-width 300px
+        margin 0 auto
+      &__wrap
+        flex-wrap wrap
+      &__field
+        width 100%
+        margin-bottom 20px
+      &-checkbox
+        &__field
+          display inline-table

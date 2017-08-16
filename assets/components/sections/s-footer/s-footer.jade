@@ -1,0 +1,28 @@
+-
+    var listPhone = [
+    {className: 's-footer__phone-number', phone: '8 800 500-31-90', description: 'Звонки по России'},
+    {className: 's-footer__phone-number', phone: '+7 812 318-40-54', description: 'Санкт-Петербург'},
+    {className: 's-footer__phone-number', phone: '+7 499 270-27-90', description: 'Москва'}
+    ]
+    var listSocial = [
+    {className: 's-footer-social__btn', href: '#', text: 'вконтакте'},
+    {className: 's-footer-social__btn s-footer-social__btn--faceboock', href: '#', text: 'faceboock'}
+    ]
+-
+mixin s-footer()
+    section.s-footer
+        .container
+            .s-footer__inner
+                +a-logo("s-footer__logo")
+                .s-footer__wrap-phone
+                    for elem in listPhone
+                        +b-phone-number(elem.className, elem.phone, elem.description)
+                .s-footer-email
+                    a.s-footer-email__link.line(href="mailto:milo@elama.ru") milo@elama.ru
+                .s-footer-social
+                    .s-footer-social__wrap
+                        for elem in listSocial
+                            +btn-social(elem.className, elem.href, elem.text)
+                    p.s-footer-social__description Расскажите друзьям
+            .s-footer__wrap
+                p.s-footer__description.line Политика конфиденциальности

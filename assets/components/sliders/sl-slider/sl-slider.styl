@@ -1,0 +1,39 @@
+.sl-slider
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+  &__item
+    display flex
+    justify-content space-between
+    width 30%
+    margin-bottom 55px
+  &__picture
+    width 80px
+    height 80px
+    background-repeat no-repeat
+  &__wrap
+    max-width 250px
+  &__title,
+  &__description
+    font-size 16px
+    line-height 19px
+  &__title
+    font-weight 700
+    color primary-color
+.slick-dots
+  display flex
+  justify-content space-between
+  width 100px
+  margin 0 auto
+  & li button
+    font-size 0
+    width 10px
+    height 10px
+    background: #002543
+    border-radius 50%
+@media screen and (max-width: 1260px)
+  .sl-slider
+    &__item
+      display block
+    &__picture
+      margin-bottom 20px

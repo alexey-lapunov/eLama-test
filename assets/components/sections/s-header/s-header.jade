@@ -1,0 +1,12 @@
+-
+    var menuList = [
+    {href: '#', text: 'Что вам это даст'},
+    {href: '#', text: 'Регистрация'}
+    ]
+-
+mixin s-header()
+    header.s-header
+        .container
+            .s-header__inner
+                +a-logo("s-header__logo")
+                +m-header-menu(menuList)

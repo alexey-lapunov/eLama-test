@@ -1,0 +1,41 @@
+.s-slaid
+  display block
+  background-color: #D8D8D8
+  z-index -1
+  overflow hidden
+  &__inner
+    display flex
+    justify-content flex-end
+    position: relative
+    padding-top 153px
+    padding-bottom 171px
+    z-index 1
+  &__picture
+    position absolute
+    width 1127px
+    height 634px
+    top 0
+    left -121px
+    background-image url(../img/man.png)
+    background-repeat no-repeat
+    z-index -1
+  &__wrap
+    max-width 700px
+  &__title
+    font-size 44px
+    line-height 40px
+    color primary-color
+    margin-bottom 40px
+  &__description
+    font-size 20px
+    line-height 28px
+    color #525252
+@media screen and (max-width: 1260px)
+  .s-slaid
+    &__inner
+      padding-top 83px
+      padding-bottom 145px
+    &__wrap
+      max-width 356px
+    &__title
+      font-size 32px

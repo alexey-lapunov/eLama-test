@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Blocked",
+    "color": "f9646e"
+  },
+  {
+    "name": "Can't Reproduce",
+    "color": "2196F3"
+  },
+  {
+    "name": "Priority: Critical",
+    "color": "B71C1C"
+  },
+  {
+    "name": "Priority: High",
+    "color": "E53935"
+  },
+  {
+    "name": "Priority: Low",
+    "color": "FFF59D"
+  },
+  {
+    "name": "Type: Bug",
+    "color": "FF1744"
+  },
+  {
+    "name": "Type: Design",
+    "color": "009688"
+  },
+  {
+    "name": "Type: New Request",
+    "color": "03A9F4"
+  },
+  {
+    "name": "Type: Question",
+    "color": "D500F9"
+  },
+  {
+    "name": "Type: WebScience Pool Request",
+    "color": "fbca04"
+  }
+]

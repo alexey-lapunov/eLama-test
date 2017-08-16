@@ -1,0 +1,4 @@
+mixin b-phone-number(className, title, description)
+    .b-phone-number(class=className ? className : "")
+        a.b-phone-number__title(href="tel:"+title)=title
+        p.b-phone-number__description=description

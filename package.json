@@ -1,0 +1,48 @@
+{
+  "name": "default-project-template",
+  "version": "1.0.0",
+  "description": "Template for a quick start.",
+  "keywords": [
+    "project",
+    "template",
+    "frontend",
+    "gulp",
+    "jade",
+    "stylus"
+  ],
+  "author": {
+    "name": "Ivan Bisultanov"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://Ivan_Bisultanov@bitbucket.org/Ivan_Bisultanov/defaultprojecttemplate.git"
+  },
+  "scripts": {
+    "c": "babel-node create-component.js",
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "babel": "^5.8.38",
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-eslint": "^2.1.0",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-imports": "0.0.3",
+    "gulp-jade": "^1.1.0",
+    "gulp-newer": "^1.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.5.0",
+    "gulp.spritesmith": "^6.2.1",
+    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.10",
+    "html": "^1.0.0",
+    "rangeslider.js": "^2.3.1"
+  }
+}

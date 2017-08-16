@@ -1,0 +1,9 @@
+mixin sl-slider(list, className)
+    .sl-slider(class=className ? className : "")
+        for elem in list
+            .sl-slider__item
+                .sl-slider__picture
+                .sl-slider__wrap
+                    p.sl-slider__title=elem.title
+                    p.sl-slider__description=elem.description
+

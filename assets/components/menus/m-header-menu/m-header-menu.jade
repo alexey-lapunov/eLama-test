@@ -1,0 +1,5 @@
+mixin m-header-menu(list, className)
+    ul.m-header-menu(role='navigation' class=className ? className : "")
+        for item in list
+            li.m-header-menu__item
+                a.m-header-menu__link(href=item.href)=item.text

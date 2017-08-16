@@ -1,0 +1,15 @@
+include ../common/jade/mixins
+
+doctype html
+html
+    +head('Home')
+    body.p-home
+        include ../components/etc/noindex-svg
+        .wrapper
+            +s-header()
+            .wrapper__content
+                +s-slaid()
+                +s-give()
+                +s-registration()
+            +s-footer()
+        +scripts({googleMap: true})

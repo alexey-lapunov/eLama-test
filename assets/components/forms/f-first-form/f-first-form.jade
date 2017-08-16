@@ -1,0 +1,13 @@
+mixin f-first-form()
+    form.f-first-form.f-default
+        .f-default__row
+            .f-default__wrap
+                input.f-default__field(type='text' name='' placeholder='Имя')
+                input.f-default__field(type='text' name='' placeholder='Логин')
+                input.f-default__field(type='password' name='' placeholder='Пароль')
+            label.f-default-checkbox
+                input.f-default-checkbox__field(type='checkbox' name='')
+                span.f-default-checkbox__text Я даю своё
+                    span.line  согласие
+                    |  на обработку моих персональных данных
+            button.f-default__button(type='submit') Зарегестрироваться

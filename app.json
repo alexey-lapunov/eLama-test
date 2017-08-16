@@ -1,0 +1,19 @@
+{
+  "name": "smile",
+  "scripts": {
+  },
+  "env": {
+    "NODE_ENV": "development",
+    "NPM_CONFIG_PRODUCTION": "false"
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
